@@ -7,16 +7,16 @@ class Matrix
 	public:
 		//void attrib();
 		Matrix(unsigned int lines, unsigned int columns)
-        {
-            _i = lines;
-            _j = columns;
-            _NofElements = lines * columns;
-            _element = new (nothrow) double[_NofElements];
-        }
-        ~Matrix()
-        {
-            delete[] _element;
-        }
+		{
+		    _i = lines;
+		    _j = columns;
+		    _NofElements = lines * columns;
+		    _element = new (nothrow) double[_NofElements];
+		}
+		~Matrix()
+		{
+		    delete[] _element;
+		}
 		void show()
 		{
 			int i=0, j=0, n=0;
